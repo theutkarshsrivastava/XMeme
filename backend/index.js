@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
     res.send('Hello to Utkarsh Srivastava XMemes API');
 })
 
-const CONNECTION_URL = 'mongodb+srv://the_utkarsh_srivastava:MERNXMeme@123@xmemedb.pnw1b.mongodb.net/<dbname>?retryWrites=true&w=majority'
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(process.env.CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
